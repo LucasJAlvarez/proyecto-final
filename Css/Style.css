@@ -1,0 +1,551 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* ESTILO PAGINA INICIAL */
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "sectionOne sectionOne sectionOne sectionOne"
+        "sectionOne sectionOne sectionOne sectionOne"
+        "SectionTwo SectionTwo SectionTwo SectionTwo"
+        "SectionTwo SectionTwo SectionTwo SectionTwo"
+        "SectionThree SectionThree SectionThree SectionThree"
+        "SectionThree SectionThree SectionThree SectionThree"
+        "footer footer footer footer";
+}
+
+/* Inicio de edicion del Header */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo navBar navBar";
+    grid-area: header;
+    height: 50px;
+    background-color: brown;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    border: 1px solid black;
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 50px
+}
+
+.navBar {
+    grid-area: navBar;
+}
+
+.navBar li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.navBar ul {
+    display: flex;
+}
+
+/* FIN DE EDICION DEL HEADER */
+
+/* INICIO DE EDICION DE SECCION UNO */
+.sectionOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "titleOne titleOne titleOne"
+        "imgOne imgOne imgOne"
+        "imgOne imgOne imgOne"
+        "imgOne imgOne imgOne";
+    grid-area: sectionOne;
+
+    background-color: rgb(160, 160, 176);
+    padding: 2%;
+    padding-bottom: 50px
+}
+
+.titleOne {
+    grid-area: titleOne;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: brown;
+}
+
+.imgOne {
+    grid-area: imgOne;
+    display: flex;
+    overflow: auto;
+}
+
+.imgOne img {
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* FIN EDICION SECCION UNO */
+
+/* COMIENZO DE EDICION SECCION DOS */
+
+.SectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleTwo titleTwo titleTwo"
+        "imgFour imgFour imgFour"
+        "imgFour imgFour imgFour"
+        "imgFour imgFour imgFour";
+    grid-area: SectionTwo;
+    background-color: rgb(160, 160, 176);
+    padding-top: 25px;
+    padding-bottom: 50px
+}
+
+.titleTwo {
+    grid-area: titleTwo;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: brown;
+}
+
+.imgFour {
+    grid-area: imgFour;
+    display: flex;
+    overflow: auto;
+}
+
+.imgFour img {
+    height: 500px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* FIN EDICION SEGUNDA SECCION */
+
+
+/* COMIENZO EDICION TERCERA SECCION */
+.SectionThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titleThree titleThree titleThree"
+        "imgSeven imgSeven imgSeven"
+        "imgSeven imgSeven imgSeven"
+        "imgSeven imgSeven imgSeven";
+    grid-area: SectionThree;
+    background-color: rgb(160, 160, 176);
+    padding-bottom: 50px;
+}
+
+.titleThree {
+    grid-area: titleThree;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: brown;
+}
+
+.imgSeven {
+    grid-area: imgSeven;
+    display: flex;
+    overflow: auto;
+}
+
+.imgSeven img {
+    height: 500px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+/* FIN EDICION TERCERA SECCION */
+
+/* COMIENZO EDICION FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "footerLogo . social"
+        "footerLogo . social"
+        "footerLogo . social";
+    grid-area: footer;
+    background-color: brown;
+}
+
+.footerLogo {
+    grid-area: footerLogo;
+}
+
+.footerLogo img {
+    height: 100px;
+    margin: 5px;
+}
+
+.social {
+    grid-area: social;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.social a {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+/* FIN EDICIOIN FOOTER */
+/* FIN EDICION ESTILO PAGINA INICIAL */
+/* COMIENZO EDICION "CONTACTO" */
+.gridConteiner {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "principal principal principal principal"
+        "articleOne articleOne imgFive imgFive"
+        "articleOne articleOne imgFive imgFive"
+        "articleOne articleOne imgFive imgFive"
+        "contact contact contact contact"
+        "contact contact contact contact"
+        "footer footer footer footer";
+    background-color: gray;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.principal {
+    grid-area: principal;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.articleOne {
+    grid-area: articleOne;
+    background-color: brown;
+    display: flex;
+    border: 5px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.articleOne form {
+    border: 2px solid black;
+}
+
+.contact {
+    grid-area: contact;
+    display: grid;
+    padding: 25px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h3 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgFive {
+    grid-area: imgFive;
+}
+
+.imgFive img {
+    width: 630px;
+}
+
+/* FIN DE EDICION DE PAGINA CONTACTOS */
+/* COMIENZO DE EDICION EN PAGINA DE NOSOTROS */
+
+.gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "principal principal principal principal"
+        "imgNosotros imgNosotros imgNosotros imgNosotros"
+        "imgNosotros imgNosotros imgNosotros imgNosotros"
+        "imgNosotros imgNosotros imgNosotros imgNosotros"
+        "imgNosotros imgNosotros imgNosotros imgNosotros"
+        "text text text text"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.principal {
+    grid-area: principal;
+    background-color: brown;
+}
+
+.text {
+    grid-area: text;
+    background-color: gray;
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: 4px;
+}
+
+.imgNosotros {
+    grid-area: imgNosotros;
+}
+
+.imgNosotros img {
+    height: 700px;
+    width: 99%;
+}
+
+/* FIN DE EDICION DE PAGINA DE NOSOTROS */
+
+/* COMIENZO DE EDICION DE PAGINA PRODUCTOS */
+.gridProductos {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "principal principal principal principal"
+        "galleryOne galleryOne galleryOne galleryOne"
+        "galleryOne galleryOne galleryOne galleryOne"
+        "secundario secundario secundario secundario"
+        "galleryTwo galleryTwo galleryTwo galleryTwo"
+        "galleryTwo galleryTwo galleryTwo galleryTwo"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.galleryOne {
+    grid-area: galleryOne;
+    display: flex;
+    overflow: auto;
+}
+
+.galleryOne img {
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+
+
+.secundario {
+    grid-area: secundario;
+    display: grid;
+    justify-content: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.secundario h2 {
+    border: 3px solid black;
+    padding: 5px 40px;
+    background-color: brown;
+}
+
+.galleryTwo {
+    grid-area: galleryTwo;
+    display: flex;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.galleryTwo img {
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+
+/* FIN EDICION "PRODUCTOS" */
+
+/* COMIENZO EDICION "ENVIOS" */
+
+.gridEnvios {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "principal principal principal principal"
+        "secundario secundario secundario secundario"
+        "galleryThree galleryThree galleryThree galleryThree"
+        "galleryThree galleryThree galleryThree galleryThree"
+        "galleryThree galleryThree galleryThree galleryThree"
+        "galleryThree galleryThree galleryThree galleryThree"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.secundario {
+    grid-area: secundario;
+}
+
+.galleryThree {
+    grid-area: galleryThree;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.galleryThree img {
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+
+/* FIN EDICION "ENVIOS" */
+
+/* Medias Query = Mobile Last */
+/* Dispositivo Mediano */
+@media (max-width :768px) {
+    .header {
+        width: 100vw;
+    }
+
+    .footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgNosotros {
+        overflow: hidden;
+    }
+
+    .imgNosotros img {
+        height: 90%;
+    }
+
+    .imgFive {
+        overflow: hidden;
+    }
+
+    .imgFive img {}
+
+    .galleryThree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Dispositivo Chico */
+@media (max-width :425px) {
+    .header {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .header img {
+        margin: 5px;
+    }
+
+    .navBar li {
+
+        list-style: none;
+        margin: 1px;
+        padding: 1px;
+        border: 1px black solid;
+        border-radius: 5%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navBar ul {
+        display: flex;
+        width: 10px;
+        justify-content: space-around;
+
+    }
+
+    .galleryThree img {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+}
