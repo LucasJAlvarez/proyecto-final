@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Imagenes/Up!.png">
     <link rel="stylesheet" href="../Css/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Productos</title>
 </head>
 
@@ -29,37 +31,79 @@
         <div class="principal">
             <h1>NUESTROS PRODUCTOS!</h1>
         </div>
-        <div class="galleryOne">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/238/796/products/helisnki_high_180x70_41-6558b0d9246fa122fd16534202228993-1024-1024.jpg"
-                alt="">
-            <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/865/441/products/mueble-tv-melamina-tronador-factorymuebles1-9793641904bf0b6fdf16130005918494-1024-1024.jpg"
-                alt="">
-            <img src="https://ciudad-muebles.com.ar/wp-content/uploads/2021/10/370-4.jpg" alt="">
-            <img src="https://akra-interiores.com.ar/tpl/gallery/imagenes/muebles-para-tv/800/mueble-tv-2.jpg" alt="">
-        </div>
-        <div class="secundario">
-            <h2> Muebles por Stock y a medida!</h2>
-        </div>
-        <div class="galleryTwo">
-            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S33NSARY5FBQHPJ2AIMPEDAELY.jpg"
-                alt="">
-            <img src="https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-a-distancia-restauracion-muebles_amp_primaria_1_1560503054.jpg"
-                alt="">
-            <img src="https://pergaminomuebles.com.ar/wp-content/uploads/2021/09/Hedda-150-nature-6-Eyra-Rosse-scaled.jpeg"
-                alt="">
-        </div>
-        <footer class="footer">
-            <div class="footerLogo">
-                <img src="../Images/Up!.png" alt="Logo">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="social">
-                <a href="https://www.facebook.com/" target="_blank" class="socialMedia">FACEBOOK</a>
-                <a href="https://www.instagram.com/" target="_blank" class="socialMedia">INSTAGRAM</a>
-                <a href="https://twitter.com/" target="_blank" class="socialMedia">TWITTER</a>
-                <a href="https://www.linkedin.com/">LINKEDIN</a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/238/796/products/helisnki_high_180x70_41-6558b0d9246fa122fd16534202228993-1024-1024.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Aparador Living</h5>
+                        <p>Conviviendo con tus muebles y paredes</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/865/441/products/mueble-tv-melamina-tronador-factorymuebles1-9793641904bf0b6fdf16130005918494-1024-1024.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rak Madera Oscura</h5>
+                        <p>Ideal para convinar con paredes blancas!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ciudad-muebles.com.ar/wp-content/uploads/2021/10/370-4.jpg" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Zapatero "Isabel"</h5>
+                        <p>Mantener todo ordenado y con mucho estilo</p>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
+    <div class="secundario">
+        <h2> Muebles por Stock y a medida!</h2>
+    </div>
+    <div class="galleryTwo">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/S33NSARY5FBQHPJ2AIMPEDAELY.jpg" alt="">
+        <img src="https://d2qc4bb64nav1a.cloudfront.net/cdn/13/images/curso-a-distancia-restauracion-muebles_amp_primaria_1_1560503054.jpg"
+            alt="">
+        <img src="https://pergaminomuebles.com.ar/wp-content/uploads/2021/09/Hedda-150-nature-6-Eyra-Rosse-scaled.jpeg"
+            alt="">
+    </div>
+    <footer class="footer">
+        <div class="footerLogo">
+            <img src="../Images/Up!.png" alt="Logo">
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank" class="socialMedia">FACEBOOK</a>
+            <a href="https://www.instagram.com/" target="_blank" class="socialMedia">INSTAGRAM</a>
+            <a href="https://twitter.com/" target="_blank" class="socialMedia">TWITTER</a>
+            <a href="https://www.linkedin.com/">LINKEDIN</a>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

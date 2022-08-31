@@ -3,7 +3,9 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
+a:hover {
+    color: orange;
+  }
 a:link,
 a:visited,
 a:active {
@@ -79,10 +81,7 @@ a:active {
 
 /* INICIO DE EDICION DE SECCION UNO */
 .sectionOne {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    grid-template-areas:
+       grid-template-areas:
         "titleOne titleOne titleOne"
         "imgOne imgOne imgOne"
         "imgOne imgOne imgOne"
@@ -94,6 +93,10 @@ a:active {
     padding-bottom: 50px
 }
 
+.sectionOne img {
+        border: 2px solid brown;
+
+}
 .titleOne {
     grid-area: titleOne;
     margin: 30px;
@@ -108,17 +111,12 @@ a:active {
     overflow: auto;
 }
 
-.imgOne img {
-    border: 2px solid black;
-    margin: 5px;
-}
-
 /* FIN EDICION SECCION UNO */
 
 /* COMIENZO DE EDICION SECCION DOS */
 
 .SectionTwo {
-    display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
@@ -358,15 +356,14 @@ a:active {
 /* FIN DE EDICION DE PAGINA DE NOSOTROS */
 
 /* COMIENZO DE EDICION DE PAGINA PRODUCTOS */
+
 .gridProductos {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
         "header header header header"
         "principal principal principal principal"
-        "galleryOne galleryOne galleryOne galleryOne"
-        "galleryOne galleryOne galleryOne galleryOne"
         "secundario secundario secundario secundario"
         "galleryTwo galleryTwo galleryTwo galleryTwo"
         "galleryTwo galleryTwo galleryTwo galleryTwo"
@@ -385,18 +382,8 @@ a:active {
     grid-area: principal;
 }
 
-.galleryOne {
-    grid-area: galleryOne;
-    display: flex;
-    overflow: auto;
-}
-
-.galleryOne img {
-    height: 400px;
-    width: 700px;
-    border: 2px solid black;
-    padding: 5px;
-    margin: 3px;
+.carousel-item img {
+    height: 900px;
 }
 
 
@@ -477,6 +464,23 @@ a:active {
     padding: 5px;
     margin: 3px;
 }
+
+a {
+
+    transition: background-color .3s;
+  }
+  
+  a:hover {
+    background-color: rgb(60, 59, 54);
+  }
+
+  img {
+    transition: background-color .5s;
+  }
+  
+  img:hover {
+    background-color: #d7c45a;
+  }
 
 /* FIN EDICION "ENVIOS" */
 
