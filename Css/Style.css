@@ -3,9 +3,11 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
 a:hover {
     color: orange;
-  }
+}
+
 a:link,
 a:visited,
 a:active {
@@ -81,7 +83,7 @@ a:active {
 
 /* INICIO DE EDICION DE SECCION UNO */
 .sectionOne {
-       grid-template-areas:
+    grid-template-areas:
         "titleOne titleOne titleOne"
         "imgOne imgOne imgOne"
         "imgOne imgOne imgOne"
@@ -94,9 +96,10 @@ a:active {
 }
 
 .sectionOne img {
-        border: 2px solid brown;
+    border: 2px solid brown;
 
 }
+
 .titleOne {
     grid-area: titleOne;
     margin: 30px;
@@ -116,7 +119,7 @@ a:active {
 /* COMIENZO DE EDICION SECCION DOS */
 
 .SectionTwo {
-    
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
@@ -468,19 +471,19 @@ a:active {
 a {
 
     transition: background-color .3s;
-  }
-  
-  a:hover {
-    background-color: rgb(60, 59, 54);
-  }
+}
 
-  img {
+a:hover {
+    background-color: rgb(60, 59, 54);
+}
+
+img {
     transition: background-color .5s;
-  }
-  
-  img:hover {
+}
+
+img:hover {
     background-color: #d7c45a;
-  }
+}
 
 /* FIN EDICION "ENVIOS" */
 
@@ -488,7 +491,7 @@ a {
 /* Dispositivo Mediano */
 @media (max-width :768px) {
     .header {
-        width: 100vw;
+        width: 100 vw;
     }
 
     .footer ul {
@@ -518,12 +521,13 @@ a {
 }
 
 /* Dispositivo Chico */
-@media (max-width :425px) {
+@media (max-width :426px) {
     .header {
         width: 100vw;
         display: flex;
         flex-direction: column;
         height: max-content;
+        background-color: rgb(125, 57, 57)
     }
 
     .header img {
@@ -552,4 +556,48 @@ a {
         overflow: hidden;
     }
 
-}
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    /* Dispositivo pequeño */
+    @media (max-width :376px) {
+        .header {
+            /* width: 100vw; */
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            background-color: rgb(0, 106, 255)
+        }
+
+        .header img {
+            margin: 0 auto;
+        }
+
+        .navBar li {
+
+            list-style: none;
+            margin: 1px;
+            padding: 1px;
+            border: 1px black solid;
+            border-radius: 5%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navBar ul {
+            margin: 0 auto;
+            display: flex;
+            width: 10px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .galleryThree img {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            height: 50vh;
+        }
